@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import logo from '../assets/logod1.png';
 import Search from './search';
+import facebookIcon from '../assets/facebook.png';
+import twitterIcon from '../assets/twitter.png';
+import linkedinIcon from '../assets/linkedin.png';
+import emailIcon from '../assets/email.png';
+import phoneIcon from '../assets/phone.png';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,18 +100,18 @@ const Navbar: React.FC = () => {
       <div className="relative bg-[#E5F0F7] px-4 md:px-20 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-6 z-10">
           <span className="flex items-center space-x-1">
-            <img src="/src/assets/email.png" alt="Email" className="h-6 w-6" />
+            <img src={emailIcon} alt="Email" className="h-6 w-6" />
             <span className="font-semibold text-gray-600">info@optiseam.org</span>
           </span>
           <span className="flex items-center space-x-1">
-            <img src="/src/assets/phone.png" alt="Phone" className="h-6 w-6" />
+            <img src={phoneIcon} alt="Phone" className="h-6 w-6" />
             <span className="font-semibold text-gray-600">(+65) 8837 7071</span>
           </span>
         </div>
         <div className="absolute top-0 right-0 h-full w-[30%] bg-[#6A89A7] clip-slant flex items-center justify-start px-20 space-x-6 z-0">
-          <a href="https://www.facebook.com/profile.php?id=61578632121275"><img src="/src/assets/facebook.png" alt="Facebook" className="h-7 w-7" /></a>
-          <a href="https://x.com/optiseam"><img src="/src/assets/twitter.png" alt="Twitter" className="h-7 w-7" /></a>
-          <a href="https://www.linkedin.com/in/optiseam/"><img src="/src/assets/linkedin.png" alt="LinkedIn" className="h-7 w-7" /></a>
+          <a href="https://www.facebook.com/profile.php?id=61578632121275"><img src={facebookIcon} alt="Facebook" className="h-7 w-7" /></a>
+          <a href="https://x.com/optiseam"><img src={twitterIcon} alt="Twitter" className="h-7 w-7" /></a>
+          <a href="https://www.linkedin.com/in/optiseam/"><img src={linkedinIcon} alt="LinkedIn" className="h-7 w-7" /></a>
           {/*<a href="#"><img src="/src/assets/instagram.png" alt="Instagram" className="h-7 w-7" /></a> */}
         </div>
       </div>
