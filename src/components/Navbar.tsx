@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
         </span>
         <span className="flex items-center space-x-1">
           <img src={phoneIcon} alt="Phone" className="h-6 w-6" />
-          <span className="font-semibold text-gray-600">(+65) 8837 7071</span>
+          <span className="font-semibold text-gray-600">(+65)8837 7071</span>
         </span>
       </div>
       <div className="hidden sm:flex absolute top-0 right-0 h-full w-[30%] bg-[#6A89A7] clip-slant items-center justify-start px-20 space-x-6 z-20">
