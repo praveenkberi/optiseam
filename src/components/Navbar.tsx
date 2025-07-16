@@ -100,14 +100,14 @@ const Navbar: React.FC = () => {
   <>
     {/* Top bar with contact/socials */}
     <div className="relative bg-[#E5F0F7] px-4 md:px-20 py-4 flex justify-between items-center">
-      <div className="flex items-center space-x-6 z-10">
+      <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-6 gap-y-2 z-10">
         <span className="flex items-center space-x-1">
           <img src={emailIcon} alt="Email" className="h-6 w-6" />
           <span className="font-semibold text-gray-600">sales@optiseam.com</span>
         </span>
         <span className="flex items-center space-x-1">
           <img src={phoneIcon} alt="Phone" className="h-6 w-6" />
-          <span className="font-semibold text-gray-600">(+65)8837 7071</span>
+          <span className="font-semibold text-gray-600">(+65) 8837 7071</span>
         </span>
       </div>
       <div className="hidden sm:flex absolute top-0 right-0 h-full w-[30%] bg-[#6A89A7] clip-slant items-center justify-start px-20 space-x-6 z-20">
