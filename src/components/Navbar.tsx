@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center space-x-6 z-10">
         <span className="flex items-center space-x-1">
           <img src={emailIcon} alt="Email" className="h-6 w-6" />
-          <span className="font-semibold text-gray-600">sales@optiseam.org</span>
+          <span className="font-semibold text-gray-600">sales@optiseam.com</span>
         </span>
         <span className="flex items-center space-x-1">
           <img src={phoneIcon} alt="Phone" className="h-6 w-6" />
