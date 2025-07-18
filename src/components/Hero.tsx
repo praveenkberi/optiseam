@@ -13,7 +13,7 @@ const Hero = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-primary bg-opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-primary bg-opacity-80 z-0"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fade-in-up">
@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up delay-200">
             <Link 
               to="/" 
-              className="bg-secondary hover:bg-tertiary text-white font-medium py-3 px-6 rounded-md text-center transition-colors"
+              className="bg-secondary hover:bg-tertiary text-white font-medium py-3 px-6 rounded-md text-center transition-colors "
             >
               Get Started
             </Link>

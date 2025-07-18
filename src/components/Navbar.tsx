@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
     {/* Main navbar */}
     <nav className="bg-white px-4 md:px-6 py-5 shadow-md relative z-30">
       <div className="flex justify-between items-center">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center transition-colors focus:outline-none">
           <div className="h-[70px] overflow-hidden flex items-center">
             <img src={logo} alt="Logo" className="h-[120px] -translate-y-0 scale-5" />
           </div>
@@ -128,16 +128,16 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-12 text-purple-850 font-medium ml-20">
-          <Link to="/" className="hover:text-gray-500">Home</Link>
-          <Link to="/about-us" className="hover:text-gray-500">About us</Link>
+          <Link to="/" className="hover:text-gray-500 transition-colors focus:outline-none">Home</Link>
+          <Link to="/about-us" className="hover:text-gray-500 transition-colors focus:outline-none">About us</Link>
           
-          <div className="relative" ref={servicesRef}>
+          <div className="relative " ref={servicesRef} >
             <button
               onClick={() => {
                 setIsServicesOpen(prev => !prev);
                 if (!isServicesOpen) setIsIndustriesOpen(false);
               }}
-              className="flex items-center hover:text-gray-500"
+              className="flex items-center hover:text-gray-500 transition-colors focus:outline-none"
             >
               Services
               <svg className={`ml-1 w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,7 +162,7 @@ const Navbar: React.FC = () => {
                 setIsIndustriesOpen(prev => !prev);
                 if (!isIndustriesOpen) setIsServicesOpen(false);
               }}
-              className="flex items-center hover:text-gray-500"
+              className="flex items-center hover:text-gray-500 transition-colors focus:outline-none"
             >
               Industry
               <svg className={`ml-1 w-4 h-4 transition-transform ${isIndustriesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">

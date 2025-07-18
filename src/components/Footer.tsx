@@ -181,6 +181,15 @@ const Footer = () => {
                   (+65) 8837 7071
                 </a>
               </li>
+              <li className="flex items-center text-gray-400">
+                <p>60 PAYA LEBAR ROAD</p>
+              </li>
+              <li className="flex items-center text-gray-400">
+                <p> #7-54 PAYA LEBAR SQUARE </p>
+              </li>
+              <li className="flex items-center text-gray-400">
+                <p>SINGAPORE 409051</p>
+              </li>
             </ul>
           </div>
         </div>
