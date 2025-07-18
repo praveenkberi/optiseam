@@ -200,26 +200,26 @@ const Navbar: React.FC = () => {
     {/* Mobile Slide Menu */}
     <div
       ref={mobileRef}
-      className={`fixed top-0 right-0 h-full w-72 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-40 ${
-        isOpen ? 'translate-x-0' : 'translate-x-full'
+      className={`fixed top-0 right-0 h-full w-72 bg-white shadow-xl transform transition-transform duration-300 ease-in-out  z-40 ${
+        isOpen ? 'translate-x-0' : 'translate-x-full '
       }`}
     >
       <div className="flex justify-between items-center px-6 py-4 border-b">
         <span className="text-lg font-bold">Menu</span>
         <button onClick={() => setIsOpen(false)}><X size={24} /></button>
       </div>
-      <div className="flex flex-col space-y-4 px-6 py-6">
-        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/about-us" onClick={() => setIsOpen(false)}>About us</Link>
+      <div className="flex flex-col space-y-4 px-6 py-6 ">
+        <Link to="/" onClick={() => setIsOpen(false)} className="focus:outline-none">Home</Link>
+        <Link to="/about-us" onClick={() => setIsOpen(false)} className="focus:outline-none">About us</Link>
         <div>
-          <button onClick={() => setIsServicesOpenMobile(prev => !prev)} className="flex justify-between w-full">
+          <button onClick={() => setIsServicesOpenMobile(prev => !prev)} className="flex justify-between w-full focus:outline-none">
             Services
             <span>{isServicesOpenMobile ? '▲' : '▼'}</span>
           </button>
           {isServicesOpenMobile && (
-            <div className="ml-4 mt-2 space-y-2">
+            <div className="ml-4 mt-2 space-y-2 ">
               {services.map((s, idx) => (
-                <Link
+                <Link className='focus:outline-none'
                   key={idx}
                   to={s === 'View All Services' ? '/services' : `/services/${s.toLowerCase().replace(/\s+/g, '-')}`}
                   onClick={() => setIsOpen(false)}
@@ -231,14 +231,14 @@ const Navbar: React.FC = () => {
           )}
         </div>
         <div>
-          <button onClick={() => setIsIndustriesOpenMobile(prev => !prev)} className="flex justify-between w-full">
+          <button onClick={() => setIsIndustriesOpenMobile(prev => !prev)} className="flex justify-between w-full focus:outline-none">
             Industry
             <span>{isIndustriesOpenMobile ? '▲' : '▼'}</span>
           </button>
           {isIndustriesOpenMobile && (
             <div className="ml-4 mt-2 space-y-2">
               {industries.map(ind => (
-                <Link
+                <Link className='focus:outline-none'
                   key={ind.id}
                   to={ind.id === 'all-industries' ? '/industries' : `/industries/${ind.id}`}
                   onClick={() => setIsOpen(false)}
@@ -251,13 +251,13 @@ const Navbar: React.FC = () => {
         </div>
         <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
         <div className="flex justify-center space-x-6 pt-6 border-t">
-  <a href="https://www.facebook.com/profile.php?id=61578632121275">
+  <a href="https://www.facebook.com/profile.php?id=61578632121275" className='focus:outline-none'>
     <img src={facebookIcon} alt="Facebook" className="h-6 w-6" />
   </a>
-  <a href="https://x.com/optiseam">
+  <a href="https://x.com/optiseam" className='focus:outline-none'>
     <img src={twitterIcon} alt="Twitter" className="h-6 w-6" />
   </a>
-  <a href="https://www.linkedin.com/in/optiseam/">
+  <a href="https://www.linkedin.com/in/optiseam/" className='focus:outline-none'>
     <img src={linkedinIcon} alt="LinkedIn" className="h-6 w-6" />
   </a>
 </div>
